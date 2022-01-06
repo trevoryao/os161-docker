@@ -112,4 +112,4 @@ USER user
 ARG GIT_URL
 
 WORKDIR $HOME
-RUN if [ -z "$GIT_URL" ]; then git clone $GIT_URL; fi
+RUN if [ ! -z "$GIT_URL" ]; then git clone $GIT_URL; fi
