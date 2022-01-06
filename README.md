@@ -17,9 +17,9 @@ None of the build args are required.
 ## Usage Example
 ```
 docker build -t os161 --build-arg GIT_URL=git@github.com:trevoryao/cs350.git .
-docker run -t os161
+docker run -dt --name os161 os161
 ```
-The container can be developed on in interactive mode (add `-i` to the last flag), or in VSCode using the [container extension](https://code.visualstudio.com/docs/remote/containers).
+The container can be developed on in interactive mode (replace `-d` with `-i`), or in VSCode using the [container extension](https://code.visualstudio.com/docs/remote/containers).
 
 ## Bugs and other Features
 Open an issue or PR. I'll look at it when I can.
